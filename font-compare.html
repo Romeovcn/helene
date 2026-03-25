@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparaison de polices - Chez Hélène</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Marcellus&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FFF0F3',
+            beige: '#FADCE3',
+            warm: '#F2B5C5',
+            gold: '#D4608A',
+            'gold-dark': '#B94574',
+            dark: '#2A1A22',
+            'brand-text': '#3B2533',
+            'text-light': '#6E4D5E',
+            offwhite: '#FFF8F9',
+            rose: '#E87FA0',
+          },
+          fontFamily: {
+            body: ['Lato', 'Helvetica Neue', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #FFF8F9;
+      color: #3B2533;
+    }
+    .font-option { border: 2px solid transparent; transition: border-color 0.3s; }
+    .font-option:hover { border-color: #D4608A; }
+    .divider { width: 60px; height: 1.5px; background-color: #D4608A; margin: 0 auto; }
+    .hero-mini {
+      background: linear-gradient(135deg, #FADCE3 0%, #F2B5C5 50%, #E87FA0 100%);
+      position: relative;
+    }
+    .hero-mini::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(42,26,34,0.3), rgba(42,26,34,0.55));
+    }
+    .hero-mini > * { position: relative; z-index: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- Page header -->
+  <div class="bg-dark text-white py-8 px-4 text-center">
+    <h1 class="text-3xl font-bold mb-2" style="font-family: Lato, sans-serif;">Comparaison de polices pour "Chez Hélène"</h1>
+    <p class="text-white/70 text-sm max-w-2xl mx-auto">
+      Chaque section ci-dessous montre la meme mise en page avec une police differente pour le titre "Chez Helene" et les headings.
+      Le texte courant (Lato) reste identique. Choisissez celle qui vous plait le plus.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+
+    <!-- ============================================ -->
+    <!-- OPTION 1: Cormorant Garamond (current) -->
+    <!-- ============================================ -->
+    <section class="font-option rounded-3xl overflow-hidden shadow-lg">
+      <div class="bg-gold text-white text-center py-3 px-4">
+        <span class="text-sm font-bold tracking-widest uppercase">Option 1 : Cormorant Garamond</span>
+        <span class="text-xs ml-2 opacity-75">(actuelle)</span>
+      </div>
+      <div class="hero-mini py-20 text-center text-white px-4">
+        <p class="text-xs tracking-[0.3em] uppercase mb-3 font-light opacity-90" style="font-family: Lato">Institut prive</p>
+        <h2 class="text-6xl sm:text-7xl md:text-8xl font-light mb-4 leading-tight" style="font-family: 'Cormorant Garamond', serif;">
+          Chez Helene
+        </h2>
+        <div class="w-16 h-px bg-white/50 mx-auto mb-4"></div>
+        <p class="text-base font-light tracking-wide opacity-90" style="font-family: Lato">Votre parenthese de beaute a Saint-Ouen</p>
+      </div>
+      <div class="bg-offwhite py-12 px-6 text-center">
+        <h3 class="text-3xl sm:text-4xl font-light text-dark leading-snug mb-4" style="font-family: 'Cormorant Garamond', serif;">
+          Un espace de bien-etre pense pour vous
+        </h3>
+        <div class="divider mb-4"></div>
+        <p class="text-text-light text-sm max-w-lg mx-auto">
+          Ici, tout est pense pour vous. Un espace cosy, chaleureux, ou je prends le temps de m'occuper de vous comme vous le meritez.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OPTION 2: Playfair Display -->
+    <!-- ============================================ -->
+    <section class="font-option rounded-3xl overflow-hidden shadow-lg">
+      <div class="bg-gold text-white text-center py-3 px-4">
+        <span class="text-sm font-bold tracking-widest uppercase">Option 2 : Playfair Display</span>
+      </div>
+      <div class="hero-mini py-20 text-center text-white px-4">
+        <p class="text-xs tracking-[0.3em] uppercase mb-3 font-light opacity-90" style="font-family: Lato">Institut prive</p>
+        <h2 class="text-6xl sm:text-7xl md:text-8xl font-normal mb-4 leading-tight" style="font-family: 'Playfair Display', serif;">
+          Chez Helene
+        </h2>
+        <div class="w-16 h-px bg-white/50 mx-auto mb-4"></div>
+        <p class="text-base font-light tracking-wide opacity-90" style="font-family: Lato">Votre parenthese de beaute a Saint-Ouen</p>
+      </div>
+      <div class="bg-offwhite py-12 px-6 text-center">
+        <h3 class="text-3xl sm:text-4xl font-normal text-dark leading-snug mb-4" style="font-family: 'Playfair Display', serif;">
+          Un espace de bien-etre pense pour vous
+        </h3>
+        <div class="divider mb-4"></div>
+        <p class="text-text-light text-sm max-w-lg mx-auto">
+          Ici, tout est pense pour vous. Un espace cosy, chaleureux, ou je prends le temps de m'occuper de vous comme vous le meritez.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OPTION 3: Playfair Display Italic -->
+    <!-- ============================================ -->
+    <section class="font-option rounded-3xl overflow-hidden shadow-lg">
+      <div class="bg-gold text-white text-center py-3 px-4">
+        <span class="text-sm font-bold tracking-widest uppercase">Option 3 : Playfair Display Italic</span>
+      </div>
+      <div class="hero-mini py-20 text-center text-white px-4">
+        <p class="text-xs tracking-[0.3em] uppercase mb-3 font-light opacity-90" style="font-family: Lato">Institut prive</p>
+        <h2 class="text-6xl sm:text-7xl md:text-8xl font-normal italic mb-4 leading-tight" style="font-family: 'Playfair Display', serif;">
+          Chez Helene
+        </h2>
+        <div class="w-16 h-px bg-white/50 mx-auto mb-4"></div>
+        <p class="text-base font-light tracking-wide opacity-90" style="font-family: Lato">Votre parenthese de beaute a Saint-Ouen</p>
+      </div>
+      <div class="bg-offwhite py-12 px-6 text-center">
+        <h3 class="text-3xl sm:text-4xl font-normal italic text-dark leading-snug mb-4" style="font-family: 'Playfair Display', serif;">
+          Un espace de bien-etre pense pour vous
+        </h3>
+        <div class="divider mb-4"></div>
+        <p class="text-text-light text-sm max-w-lg mx-auto">
+          Ici, tout est pense pour vous. Un espace cosy, chaleureux, ou je prends le temps de m'occuper de vous comme vous le meritez.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OPTION 4: Cinzel -->
+    <!-- ============================================ -->
+    <section class="font-option rounded-3xl overflow-hidden shadow-lg">
+      <div class="bg-gold text-white text-center py-3 px-4">
+        <span class="text-sm font-bold tracking-widest uppercase">Option 4 : Cinzel</span>
+      </div>
+      <div class="hero-mini py-20 text-center text-white px-4">
+        <p class="text-xs tracking-[0.3em] uppercase mb-3 font-light opacity-90" style="font-family: Lato">Institut prive</p>
+        <h2 class="text-5xl sm:text-6xl md:text-7xl font-normal mb-4 leading-tight tracking-wide" style="font-family: 'Cinzel', serif;">
+          Chez Helene
+        </h2>
+        <div class="w-16 h-px bg-white/50 mx-auto mb-4"></div>
+        <p class="text-base font-light tracking-wide opacity-90" style="font-family: Lato">Votre parenthese de beaute a Saint-Ouen</p>
+      </div>
+      <div class="bg-offwhite py-12 px-6 text-center">
+        <h3 class="text-3xl sm:text-4xl font-normal text-dark leading-snug mb-4 tracking-wide" style="font-family: 'Cinzel', serif;">
+          Un espace de bien-etre pense pour vous
+        </h3>
+        <div class="divider mb-4"></div>
+        <p class="text-text-light text-sm max-w-lg mx-auto">
+          Ici, tout est pense pour vous. Un espace cosy, chaleureux, ou je prends le temps de m'occuper de vous comme vous le meritez.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OPTION 5: Great Vibes (script) -->
+    <!-- ============================================ -->
+    <section class="font-option rounded-3xl overflow-hidden shadow-lg">
+      <div class="bg-gold text-white text-center py-3 px-4">
+        <span class="text-sm font-bold tracking-widest uppercase">Option 5 : Great Vibes</span>
+        <span class="text-xs ml-2 opacity-75">(script / cursive)</span>
+      </div>
+      <div class="hero-mini py-20 text-center text-white px-4">
+        <p class="text-xs tracking-[0.3em] uppercase mb-3 font-light opacity-90" style="font-family: Lato">Institut prive</p>
+        <h2 class="text-6xl sm:text-7xl md:text-8xl font-normal mb-4 leading-tight" style="font-family: 'Great Vibes', cursive;">
+          Chez Helene
+        </h2>
+        <div class="w-16 h-px bg-white/50 mx-auto mb-4"></div>
+        <p class="text-base font-light tracking-wide opacity-90" style="font-family: Lato">Votre parenthese de beaute a Saint-Ouen</p>
+      </div>
+      <div class="bg-offwhite py-12 px-6 text-center">
+        <h3 class="text-3xl sm:text-4xl font-normal text-dark leading-snug mb-4" style="font-family: 'Cormorant Garamond', serif;">
+          Un espace de bien-etre pense pour vous
+        </h3>
+        <div class="divider mb-4"></div>
+        <p class="text-text-light text-sm max-w-lg mx-auto">
+          Ici, tout est pense pour vous. Un espace cosy, chaleureux, ou je prends le temps de m'occuper de vous comme vous le meritez.
+          <br><br>
+          <em class="text-text-light/70 text-xs">(Great Vibes uniquement pour le titre principal, Cormorant Garamond pour les sous-titres)</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OPTION 6: Marcellus -->
+    <!-- ============================================ -->
+    <section class="font-option rounded-3xl overflow-hidden shadow-lg">
+      <div class="bg-gold text-white text-center py-3 px-4">
+        <span class="text-sm font-bold tracking-widest uppercase">Option 6 : Marcellus</span>
+      </div>
+      <div class="hero-mini py-20 text-center text-white px-4">
+        <p class="text-xs tracking-[0.3em] uppercase mb-3 font-light opacity-90" style="font-family: Lato">Institut prive</p>
+        <h2 class="text-6xl sm:text-7xl md:text-8xl font-normal mb-4 leading-tight tracking-wider" style="font-family: 'Marcellus', serif;">
+          Chez Helene
+        </h2>
+        <div class="w-16 h-px bg-white/50 mx-auto mb-4"></div>
+        <p class="text-base font-light tracking-wide opacity-90" style="font-family: Lato">Votre parenthese de beaute a Saint-Ouen</p>
+      </div>
+      <div class="bg-offwhite py-12 px-6 text-center">
+        <h3 class="text-3xl sm:text-4xl font-normal text-dark leading-snug mb-4 tracking-wide" style="font-family: 'Marcellus', serif;">
+          Un espace de bien-etre pense pour vous
+        </h3>
+        <div class="divider mb-4"></div>
+        <p class="text-text-light text-sm max-w-lg mx-auto">
+          Ici, tout est pense pour vous. Un espace cosy, chaleureux, ou je prends le temps de m'occuper de vous comme vous le meritez.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer note -->
+  <div class="bg-dark text-white/60 text-center py-8 px-4 text-sm">
+    <p>Indiquez-moi le numero de l'option que vous preferez et je l'appliquerai a tout le site.</p>
+    <p class="mt-2 text-white/40 text-xs">Page de comparaison uniquement -- ne sera pas publiee (noindex).</p>
+  </div>
+
+</body>
+</html>
