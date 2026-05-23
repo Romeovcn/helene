@@ -64,20 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => observer.observe(el));
   }
 
-  // --- Contact form (front-end only) ---
-  const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const successMsg = document.getElementById('form-success');
-      if (successMsg) {
-        successMsg.classList.remove('hidden');
-        form.reset();
-        setTimeout(() => successMsg.classList.add('hidden'), 5000);
-      }
-    });
-  }
-
   // --- Current year in footer ---
   const yearEl = document.getElementById('current-year');
   if (yearEl) {

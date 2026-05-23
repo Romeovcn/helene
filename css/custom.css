@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap');
 
 :root {
   --color-cream: #FFF5F6;
@@ -14,7 +14,7 @@
   --color-lavender: #EDD5F5;
   --color-peach: '#FFD5C8';
   --font-heading: 'Quicksand', 'Nunito', sans-serif;
-  --font-script: 'Sacramento', cursive;
+  --font-script: 'Playfair Display', 'Georgia', serif;
   --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-script {
   font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.005em;
 }
 
 /* Hero */
@@ -61,6 +64,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-scrolled .nav-logo {
   color: var(--color-dark) !important;
+}
+
+/* Force consistent nav typography across pages, regardless of each page's local Tailwind font-heading config */
+#main-nav .nav-link,
+#main-nav .nav-logo,
+#mobile-menu nav a {
+  font-family: 'Quicksand', 'Nunito', sans-serif !important;
+}
+
+#main-nav .font-script,
+#mobile-menu .font-script {
+  font-family: 'Playfair Display', 'Georgia', serif !important;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .nav-link {
